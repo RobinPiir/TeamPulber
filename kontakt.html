@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="kontakt.css">
+  <title>Kontakt</title>
 </head>
 <body>
-    
+  <div class="container">
+    <h1>Kontakteeru meiega!</h1>
+    <p>Oleme siin, et teiega suhelda. Võtke meiega ühendust, kasutades allpool olevat vormi või järgnevaid kontaktandmeid:</p>
+
+    <div class="contact-info">
+      <h2>Kontaktandmed</h2>
+      <p><strong>E-post:</strong> parvin.tiks@gmail.com</p>
+      <p><strong>Telefon:</strong> +372 53001790</p>
+    </div>
+
+    <div class="map">
+      <!-- Saate lisada kaardirakenduse või Google Maps'i sisu siia -->
+    </div>
+
+    <form>
+      <label for="name">Nimi:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">E-post:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Sõnum:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Saada</button>
+    </form>
+  </div>
+
+  <!-- Neoonäärtega kuubikud paremal ja vasakul -->
+  <div class="cube"></div>
+  <div class="cube"></div>
+  <div class="cube"></div>
+  <div class="cube"></div>
+  <div class="cube"></div>
 </body>
 </html>
