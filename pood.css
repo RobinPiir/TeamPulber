@@ -1,9 +1,70 @@
+.topnav {
+    background-color: #222;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+  }
+  
+  .topnav a {
+    float: left;
+    transform: translateX(100%);
+    animation: slideIn 0.5s forwards;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: #00ff00;
+    color: #111;
+    text-align: center;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    margin-left: 30px;
+  }
+  
+  @keyframes slideIn {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .topnav a:hover {
+    background-color: #0c9b11;
+    color: black;
+  }
+  
+  .logo {
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 6px;
+  }
+  
+  .logo-text {
+    color: #ffffff;
+    font-size: 30px;
+    margin: 0;
+    font-style: italic;
+  }
+  
+  .topnav a.active {
+    background-color: #00ff00;
+    color: #000;
+  }
+  
+  .topnav:hover a {
+    opacity: 1;
+    transform: translateX(0);
+  }
 
 body {
     font-size: 16px;
     line-height: 1.5;
-    font-family: Arial, sans-serif;
-    margin: 40px;
+    font-family: 'Play', sans-serif;
+    margin: 0;
     padding: 0;
     background-color: #111;
     color: #fff;
@@ -12,20 +73,68 @@ body {
     background-color: #222;
     border: 1px solid black;
     height: auto;
-    margin-top: 15px;
+    margin-top: 4px;
     margin-left: auto;
     margin-right: auto;
     display:flex;
     align-items: center;
     flex-direction: column;
+    padding-bottom: 15px;
 }
 
 .toode{
     background-color: #333;
     margin-top:7%;
     width: inherit;
-    min-width: 300px;
-    border:1px solid gray;
-    box-shadow: 5px 5px 20px #888888;
+    min-width: 700px;
+    border:1px solid #00ff00;
+    box-shadow: 5px 5px 20px #00ff00;
     border-radius: 5px;
 }
+
+.pilt{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.nimi{
+    text-align: center;
+    color:#00ff00;
+    text-shadow:5px 5px 20px #00ff00;
+}
+
+.hind{
+    text-align: center;
+    color:white;
+}
+
+/* Algab alumine osa */
+.full-width-line {
+    width: 100%;
+    border: 2px solid #00ff00;
+  }
+  
+  .after-line-content {
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    padding: 20px;
+    list-style-type: circle;
+    background-color: #111;
+  }
+  
+  .after-line-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .after-line-content li {
+    margin-bottom: 10px;
+  }
+  
+  /* lõppeb alumine osa */
