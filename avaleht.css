@@ -1,29 +1,280 @@
 .topnav {
-    background-color: #333;
-    overflow: hidden;
-  }
-  
-  .topnav a {
-    float: right;
-    color: #0c9b11;
-    text-align: center;
-    padding: 25px 35px;
-    text-decoration: none;
-    font-size: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
+  background-color: #222;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+}
 
-  .topnav a:hover {
-    background-color: #0c9b11;
-    color: black;
-  }
+.topnav a {
+  float: left;
+  transform: translateX(100%);
+  animation: slideIn 0.5s forwards;
+  transition: background-color 0.3s, color 0.3s;
+  background-color: #00ff00;
+  color: #111;
+  text-align: center;
+  padding: 15px 25px;
+  text-decoration: none;
+  font-size: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  margin-left: 30px;
+}
 
-  .topnav a.active {
-    background-color: #56e432;
-    color: rgb(0, 0, 0);
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
-  body {
-    background-color: rgb(23, 23, 23);
-    border: solid #56e432 3px;
+}
+
+.topnav a:hover {
+  background-color: #0c9b11;
+  color: black;
+}
+
+.logo {
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 6px;
+}
+
+.logo-text {
+  color: #ffffff;
+  font-size: 30px;
+  margin: 0;
+  font-style: italic;
+}
+
+.topnav a.active {
+  background-color: #00ff00;
+  color: #000;
+}
+
+.topnav:hover a {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: 'Play', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #111;
+  color: #fff;
+}
+
+.friday-banner {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  border-top: 4px solid #00ff00;
+  border-bottom: 4px solid #00ff00;
+}
+
+.friday-banner::before {
+  content: '';
+  background-image: url('res/images/blackfriday.png');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  filter: blur(3px);
+}
+
+.banner-content {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.friday-banner h2 {
+  color: #00ff00;
+  font-size: 40px;
+}
+
+.friday-banner p {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #00ff00;
+  transition: background-color 0.3s, color 0.3s;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 15px;
+  margin-top: 15px;
+  font-size: 20px;
+  border: 4px solid #000;
+}
+
+.button:hover {
+  background-color: #0c9b11;
+  color: black;
+}
+
+.missionpic {
+  display: flex;
+  overflow: hidden;
+  border-bottom: 4px solid #00ff00;
+  background-color: #111;
+}
+
+.mission,
+.blurimg {
+  flex: 1;
+  max-height: 500px;
+  padding: 30px;
+  box-sizing: border-box;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+
+.mission h1 {
+  color: #fff;
+  font-style: italic;
+  font-size: 30px;
+  text-shadow: 2px 2px 3px #00ff00;
+}
+
+.mission p {
+  color: #fff;
+  font-size: 25px;
+}
+
+.blurimg {
+  background-image: url('res/images/klavi.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px);
+  transition: all 0.5s;
+}
+
+@media (max-width: 768px) {
+  .missionpic {
+    flex-direction: column;
   }
-  
+}
+
+.points {
+  display: flex;
+  overflow: hidden;
+}
+
+.points .mission {
+  flex: 1;
+  padding: 30px;
+  box-sizing: border-box;
+  transition: all 0.5s;
+  max-height: 500px;
+  overflow: hidden;
+}
+
+.points .blurimg {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px);
+  max-height: 500px;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+
+.points .blurimg {
+  background-image: url('res/images/2.jpg'); /* Replace 'another-image.jpg' with the actual image path */
+}
+
+.missionpic h1 {
+  color: #fff;
+  font-family: 'Play', sans-serif;
+}
+
+.missionpic p,
+.missionpic ul {
+  color: #fff;
+  font-family: 'Play', sans-serif;
+}
+
+.points .mission h1 {
+  font-size: 40px;
+  text-shadow: 2px 2px 4px #ffae00;
+}
+
+.points .mission ul {
+  font-size: 25px;
+}
+
+.trust {
+  background-color: #00ff00;
+  padding: 30px;
+  box-sizing: border-box;
+  text-align: center;
+  color: #111;
+}
+
+.trust h2 {
+  color: #111;
+  font-size: 32px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.trust p {
+  font-size: 21px;
+}
+
+.sponsor {
+  margin-top: 50px;
+}
+
+.sponsor img {
+  max-width: 200px;
+  max-height: 40px;
+  margin: 0 30px;
+}
+
+
+
+/* Algab alumine osa */
+.full-width-line {
+  width: 100%;
+  border: 2px solid #00ff00;
+}
+
+.after-line-content {
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  padding: 20px;
+  list-style-type: circle;
+}
+
+.after-line-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.after-line-content li {
+  margin-bottom: 10px;
+}
+
+/* lõppeb alumine osa */
