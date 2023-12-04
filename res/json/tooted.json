@@ -1,0 +1,18 @@
+[{
+    "id": 1,
+    "nimi":"Pulber nr 1",
+    "pilt":"res/images/Pulber1.png",
+    "hind":"€9.99"
+},
+{
+    "id": 2,
+    "nimi":"ISAMAINE Pulber",
+    "pilt":"res/images/Eesti.png",
+    "hind":"€12.99"
+},
+{
+    "id": 3,
+    "nimi":"This can't be real",
+    "pilt":"res/images/Obama.png",
+    "hind":"€12.99"
+}]
