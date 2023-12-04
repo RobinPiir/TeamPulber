@@ -1,10 +1,10 @@
 // JavaScript võetud Robin Piiri teise aine projektist ja kohendatud vastava eesmärgi jaoks
 $(function() {
     //Json query
-    $.get( "https://raw.githubusercontent.com/RobinPiir/TeamPulber/main/res/json/tooted.json", function( data ) {
+    $.get( "res/json/tooted.json", function( data ) {
         console.log(data);
         $( ".result" ).html( data );
-        $.each(JSON.parse(data), function( index, value ) {
+        $.each(data, function( index, value ) {
             
             let toode = new Toode(value.id,value.nimi,value.pilt,value.hind);
         
