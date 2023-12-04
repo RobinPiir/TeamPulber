@@ -1,3 +1,4 @@
+/* navbar */
 .topnav {
   background-color: #222;
   overflow: hidden;
@@ -23,7 +24,7 @@
   border-radius: 20px;
   margin-left: 30px;
 }
-
+/* animations */
 @keyframes slideIn {
   to {
     opacity: 1;
@@ -46,7 +47,7 @@
   background-color: #0c9b11;
   color: black;
 }
-
+/* logo */
 .logo {
   float: left;
   padding-left: 15px;
@@ -80,7 +81,7 @@ body {
   background-color: #111;
   color: #fff;
 }
-
+/* banner */
 .friday-banner {
   position: relative;
   overflow: hidden;
@@ -140,7 +141,7 @@ body {
   background-color: #0c9b11;
   color: black;
 }
-
+/* mission */
 .missionpic {
   display: flex;
   overflow: hidden;
@@ -183,7 +184,7 @@ body {
     flex-direction: column;
   }
 }
-
+/* unordered list */
 .points {
   display: flex;
   overflow: hidden;
@@ -231,7 +232,7 @@ body {
 .points .mission ul {
   font-size: 25px;
 }
-
+/* trust */
 .trust {
   background-color: #00ff00;
   padding: 30px;
@@ -259,7 +260,7 @@ body {
   max-height: 40px;
   margin: 0 30px;
 }
-
+/* animation check */
 .in-view {
   animation: fade 1s both;
 }
